@@ -1,0 +1,555 @@
+{
+  "description": "Sanitized, non-executable architecture inventory; not an n8n import file",
+  "nodes": [
+    {
+      "id": "N01",
+      "component": "telegramTrigger"
+    },
+    {
+      "id": "N02",
+      "component": "set"
+    },
+    {
+      "id": "N03",
+      "component": "dataTable"
+    },
+    {
+      "id": "N04",
+      "component": "if"
+    },
+    {
+      "id": "N05",
+      "component": "dataTable"
+    },
+    {
+      "id": "N06",
+      "component": "switch"
+    },
+    {
+      "id": "N07",
+      "component": "dataTable"
+    },
+    {
+      "id": "N08",
+      "component": "telegram"
+    },
+    {
+      "id": "N09",
+      "component": "dataTable"
+    },
+    {
+      "id": "N10",
+      "component": "telegram"
+    },
+    {
+      "id": "N11",
+      "component": "telegram"
+    },
+    {
+      "id": "N12",
+      "component": "switch"
+    },
+    {
+      "id": "N13",
+      "component": "telegram"
+    },
+    {
+      "id": "N14",
+      "component": "telegram"
+    },
+    {
+      "id": "N15",
+      "component": "telegram"
+    },
+    {
+      "id": "N16",
+      "component": "telegram"
+    },
+    {
+      "id": "N17",
+      "component": "if"
+    },
+    {
+      "id": "N18",
+      "component": "telegram"
+    },
+    {
+      "id": "N19",
+      "component": "telegram"
+    },
+    {
+      "id": "N20",
+      "component": "if"
+    },
+    {
+      "id": "N21",
+      "component": "dataTable"
+    },
+    {
+      "id": "N22",
+      "component": "telegram"
+    },
+    {
+      "id": "N23",
+      "component": "code"
+    },
+    {
+      "id": "N24",
+      "component": "if"
+    },
+    {
+      "id": "N25",
+      "component": "dataTable"
+    },
+    {
+      "id": "N26",
+      "component": "code"
+    },
+    {
+      "id": "N27",
+      "component": "dataTable"
+    },
+    {
+      "id": "N28",
+      "component": "telegram"
+    },
+    {
+      "id": "N29",
+      "component": "if"
+    },
+    {
+      "id": "N30",
+      "component": "noOp"
+    },
+    {
+      "id": "N31",
+      "component": "code"
+    },
+    {
+      "id": "N32",
+      "component": "switch"
+    },
+    {
+      "id": "N33",
+      "component": "httpRequest"
+    },
+    {
+      "id": "N34",
+      "component": "code"
+    },
+    {
+      "id": "N35",
+      "component": "switch"
+    },
+    {
+      "id": "N36",
+      "component": "httpRequest"
+    },
+    {
+      "id": "N37",
+      "component": "code"
+    },
+    {
+      "id": "N38",
+      "component": "switch"
+    },
+    {
+      "id": "N39",
+      "component": "httpRequest"
+    },
+    {
+      "id": "N40",
+      "component": "code"
+    },
+    {
+      "id": "N41",
+      "component": "switch"
+    },
+    {
+      "id": "N42",
+      "component": "httpRequest"
+    },
+    {
+      "id": "N43",
+      "component": "code"
+    },
+    {
+      "id": "N44",
+      "component": "code"
+    },
+    {
+      "id": "N45",
+      "component": "if"
+    },
+    {
+      "id": "N46",
+      "component": "dataTable"
+    },
+    {
+      "id": "N47",
+      "component": "telegram"
+    },
+    {
+      "id": "N48",
+      "component": "noOp"
+    },
+    {
+      "id": "N49",
+      "component": "code"
+    },
+    {
+      "id": "N50",
+      "component": "code"
+    },
+    {
+      "id": "N51",
+      "component": "dataTable"
+    },
+    {
+      "id": "N52",
+      "component": "telegram"
+    }
+  ],
+  "edges": [
+    {
+      "from": "N01",
+      "to": "N02",
+      "branch": 0
+    },
+    {
+      "from": "N02",
+      "to": "N17",
+      "branch": 0
+    },
+    {
+      "from": "N03",
+      "to": "N04",
+      "branch": 0
+    },
+    {
+      "from": "N03",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N04",
+      "to": "N06",
+      "branch": 0
+    },
+    {
+      "from": "N04",
+      "to": "N05",
+      "branch": 1
+    },
+    {
+      "from": "N05",
+      "to": "N06",
+      "branch": 0
+    },
+    {
+      "from": "N05",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N06",
+      "to": "N07",
+      "branch": 0
+    },
+    {
+      "from": "N06",
+      "to": "N09",
+      "branch": 1
+    },
+    {
+      "from": "N06",
+      "to": "N11",
+      "branch": 2
+    },
+    {
+      "from": "N06",
+      "to": "N12",
+      "branch": 3
+    },
+    {
+      "from": "N07",
+      "to": "N08",
+      "branch": 0
+    },
+    {
+      "from": "N07",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N09",
+      "to": "N10",
+      "branch": 0
+    },
+    {
+      "from": "N09",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N12",
+      "to": "N20",
+      "branch": 0
+    },
+    {
+      "from": "N12",
+      "to": "N23",
+      "branch": 1
+    },
+    {
+      "from": "N12",
+      "to": "N13",
+      "branch": 2
+    },
+    {
+      "from": "N12",
+      "to": "N14",
+      "branch": 3
+    },
+    {
+      "from": "N12",
+      "to": "N15",
+      "branch": 4
+    },
+    {
+      "from": "N17",
+      "to": "N03",
+      "branch": 0
+    },
+    {
+      "from": "N17",
+      "to": "N18",
+      "branch": 1
+    },
+    {
+      "from": "N20",
+      "to": "N21",
+      "branch": 0
+    },
+    {
+      "from": "N20",
+      "to": "N16",
+      "branch": 1
+    },
+    {
+      "from": "N21",
+      "to": "N22",
+      "branch": 0
+    },
+    {
+      "from": "N21",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N23",
+      "to": "N24",
+      "branch": 0
+    },
+    {
+      "from": "N25",
+      "to": "N26",
+      "branch": 0
+    },
+    {
+      "from": "N25",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N24",
+      "to": "N25",
+      "branch": 0
+    },
+    {
+      "from": "N24",
+      "to": "N26",
+      "branch": 1
+    },
+    {
+      "from": "N27",
+      "to": "N28",
+      "branch": 0
+    },
+    {
+      "from": "N27",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N28",
+      "to": "N29",
+      "branch": 0
+    },
+    {
+      "from": "N29",
+      "to": "N30",
+      "branch": 0
+    },
+    {
+      "from": "N26",
+      "to": "N27",
+      "branch": 0
+    },
+    {
+      "from": "N31",
+      "to": "N32",
+      "branch": 0
+    },
+    {
+      "from": "N32",
+      "to": "N33",
+      "branch": 0
+    },
+    {
+      "from": "N32",
+      "to": "N44",
+      "branch": 1
+    },
+    {
+      "from": "N33",
+      "to": "N34",
+      "branch": 0
+    },
+    {
+      "from": "N34",
+      "to": "N35",
+      "branch": 0
+    },
+    {
+      "from": "N35",
+      "to": "N36",
+      "branch": 0
+    },
+    {
+      "from": "N35",
+      "to": "N44",
+      "branch": 1
+    },
+    {
+      "from": "N36",
+      "to": "N37",
+      "branch": 0
+    },
+    {
+      "from": "N37",
+      "to": "N38",
+      "branch": 0
+    },
+    {
+      "from": "N38",
+      "to": "N39",
+      "branch": 0
+    },
+    {
+      "from": "N38",
+      "to": "N42",
+      "branch": 1
+    },
+    {
+      "from": "N38",
+      "to": "N44",
+      "branch": 2
+    },
+    {
+      "from": "N39",
+      "to": "N40",
+      "branch": 0
+    },
+    {
+      "from": "N40",
+      "to": "N41",
+      "branch": 0
+    },
+    {
+      "from": "N41",
+      "to": "N42",
+      "branch": 0
+    },
+    {
+      "from": "N41",
+      "to": "N44",
+      "branch": 1
+    },
+    {
+      "from": "N42",
+      "to": "N43",
+      "branch": 0
+    },
+    {
+      "from": "N43",
+      "to": "N44",
+      "branch": 0
+    },
+    {
+      "from": "N44",
+      "to": "N45",
+      "branch": 0
+    },
+    {
+      "from": "N45",
+      "to": "N48",
+      "branch": 0
+    },
+    {
+      "from": "N45",
+      "to": "N46",
+      "branch": 1
+    },
+    {
+      "from": "N46",
+      "to": "N47",
+      "branch": 0
+    },
+    {
+      "from": "N46",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N30",
+      "to": "N31",
+      "branch": 0
+    },
+    {
+      "from": "N49",
+      "to": "N50",
+      "branch": 0
+    },
+    {
+      "from": "N49",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N50",
+      "to": "N51",
+      "branch": 0
+    },
+    {
+      "from": "N50",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N51",
+      "to": "N52",
+      "branch": 0
+    },
+    {
+      "from": "N51",
+      "to": "N19",
+      "branch": 1
+    },
+    {
+      "from": "N48",
+      "to": "N49",
+      "branch": 0
+    }
+  ]
+}

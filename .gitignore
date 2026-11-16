@@ -1,0 +1,6 @@
+*.zip
+.env
+.env.*
+*credentials*
+*secrets*
+fatimaallauddin-workflows/
